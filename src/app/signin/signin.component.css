@@ -1,0 +1,37 @@
+#float-input{
+  Border-left:none;
+  border-right:none;
+  Border-top:none;
+  Border-width:3px;
+  border-bottom-color:lightgray;
+
+}
+#float-pass{
+  Border-left:none;
+  border-right:none;
+  Border-top:none;
+  Border-width:3px;
+
+}
+
+
+#form{
+
+  width: 350px;
+  font-size:16px;
+  border:2px solid darkgrey;
+  margin-left:35%;
+  margin-right: 35%;
+  border-top:none;
+  border-radius: 10px;
+  padding: 3.5%;
+
+}
+
+.text{
+  color:darkgray;
+  font-size:13px;
+}
+.txt2{
+  color:darkkhaki;
+}

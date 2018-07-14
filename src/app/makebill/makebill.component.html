@@ -1,0 +1,69 @@
+<div>
+<div id="form">
+  <h3 style="padding-left: 35%;color:darkgray"> generate bill</h3>
+  <br>
+  <br>
+<p-autoComplete  [suggestions]="filteredProducts" (completeMethod)="filterProducts($event)" [size]="30"
+                [minLength]="1" placeholder="product name" [dropdown]="true" [(ngModel)] = "product">
+  <ng-template let-product pTemplate="item">
+    <div class="ui-helper-clearfix" style="border-bottom:1px solid #D5D5D5">
+      <div style="font-size:18px;float:right;margin:10px 10px 0 0">{{product}}</div>
+    </div>
+  </ng-template>
+</p-autoComplete>
+<br>
+  <br>
+<br>
+    <input type="number" [(ngModel)]= "quantity" id="float-input" size="38" pKeyFilter="int" placeholder="quantity" >
+    <br>
+    <br>
+<br>
+<p-button label="add" (click) = "addProduct(product , quantity)" style="padding-right: 2%;" id="button" cornerstyleclass>
+</p-button>
+
+  <br>
+  <br>
+
+<div class="text" >
+  want to leave?
+
+  <a class="txt2" routerLink="/signin">
+    Sign out
+  </a>
+</div>
+</div>
+
+
+<div id="table">
+  <h3 style="padding-left: 35%;color:darkgray">list details </h3>
+  <p-table >
+    <ng-template pTemplate="header">
+      <tr>
+        <th >product
+        </th>
+        <th >product_id
+        </th>
+        <th >price
+        </th>
+        <th >gst
+        </th>
+        <th >totalprice
+        </th>
+        <th >quantity
+        </th>
+        <th >total
+        </th>
+
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-selectedProducts>
+      <tr>
+        <td>{{selectedProducts.product}}</td>
+        <td>{{selectedProducts.price}}</td>
+
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+</div>
+

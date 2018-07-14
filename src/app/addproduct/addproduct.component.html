@@ -1,0 +1,48 @@
+
+
+<div id="form">
+  <h3 style="padding-left: 35%;color:darkgray"> Add product</h3>
+  <br>
+  <br>
+  <span class="ui-float-label">
+    <input id="float-input" type="text" size="30" pInputText/>
+    <label for="float-input">product id</label>
+</span>
+  <br> <br>
+  <span class="ui-float-label">
+    <input id="float-input1" type="text" size="30" pInputText>
+    <label for="float-input1">product name</label>
+</span>
+  <br>
+  <br>
+  <span class="ui-float-label">
+    <input type="text" id="float-input2" size="38" pKeyFilter="int">
+    <label for="float-input2">price</label>
+</span>
+
+  <br>
+  <br>
+
+
+  <p-dropdown [options]="gst" ></p-dropdown>
+  <br>
+  <br>
+  <br>
+  <p-button label="add" routerLink="/addproduct" style="padding-right: 2%;" id="button" cornerstyleclass>
+  </p-button>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="text" >
+    want to leave?
+
+    <a class="txt2" routerLink="/signin">
+      Sign out
+    </a>
+  </div>
+
+
+</div>
+

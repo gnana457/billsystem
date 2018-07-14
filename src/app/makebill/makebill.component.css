@@ -1,0 +1,39 @@
+#form{
+
+  width: 600px;
+  float:left;
+  font-size:16px;
+  border:2px solid darkgrey;
+  border-top:none;
+  border-radius: 10px;
+  padding: 3.5%;
+
+}
+#table{
+ float:right;
+  width: 600px;
+  float:right;
+  font-size:16px;
+  border:2px solid darkgrey;
+  border-top:none;
+  border-radius: 10px;
+  padding: 3.5%;
+  margin-left:-50%;
+
+}
+.text{
+  color:darkgray;
+  font-size:13px;
+}
+.txt2{
+  color:darkkhaki;
+}
+#float-input{
+  Border-left:none;
+  border-right:none;
+  Border-top:none;
+  Border-width:3px;
+  Border-color:lightgray;
+  width:80%
+
+}

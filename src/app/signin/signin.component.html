@@ -1,0 +1,37 @@
+
+
+<div id="form">
+
+  <h3 style="padding-left: 35%;color:darkgray"> Signin</h3>
+  <br>
+  <br>
+<span class="ui-float-label" >
+    <input id="float-input"  type="email" size="38" [(ngModel)]="mail"  pKeyFilter="email" pInputText/>
+    <label for="float-input">email</label>
+</span>
+<br> <br>
+<span class="ui-float-label">
+    <input id="float-pass" name="password" type="password" [(ngModel)]="password" size="38" pPassword>
+    <label for="float-pass">password</label>
+</span>
+<br>
+<br>
+<br>
+  <br>
+<p-button label="sign in" (click)= "signin(mail,password)" style="padding-right: 10%;" id="button" cornerstyleclass>
+</p-button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="text" >
+						<span class="txt1">
+							Don’t have an account?
+						</span>
+
+    <a class="txt2" routerLink="/signup">
+      Sign Up
+    </a>
+  </div>
+<!--<p-button label="signup" routerLink="/signup"></p-button>-->
+</div>
